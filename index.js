@@ -13,17 +13,21 @@ function createElement(el, text, classNm) {
   return element;
 }
 
+function bindingChildWithParent(parent,child){
+  parent.appendChild(child)
+}
+
 function addTodoList() {
   let inputText = todoInput.value;
   const li = createElement("li", "", "todoItem");
   let p = createElement("p", inputText, "flex-1");
-  li.appendChild(p);
+  bindingChildWithParent(li,p)
   const editBtn = createElement("button", "Edit", "editBtn");
-  li.appendChild(editBtn);
+  bindingChildWithParent(li,editBtn)
   const deleteBtn = createElement("button", "Delete", "deleteBtn");
-  li.appendChild(deleteBtn);
+  bindingChildWithParent(li,deleteBtn)
   // binding li with todo list
-  todoList.appendChild(li);
+  bindingChildWithParent(todoList,li)
   todoInput.value = "";
   todoInput.focus();
 }
