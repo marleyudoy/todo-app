@@ -1,14 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.main-todo-div{
+.main-todo-div {
   @apply w-[500px] h-[500px] bg-[rgba(16,61,55,0.3)] border border-white rounded-[20px] p-3;
 }
 
-
 .todoItem {
-  @apply flex justify-between items-center overflow-hidden gap-4 px-4
+  @apply flex justify-between items-center gap-4 px-2 py-2 border border-[rgb(53,160,119)] rounded-[4px] mt-3;
 }
-.editDeleteBtn{
-  @apply text-xl cursor-pointer translate-x-[100px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300;
+.editBtn {
+  @apply text-xl cursor-pointer text-green-700;
+}
+.deleteBtn {
+  @apply text-xl cursor-pointer text-red-600;
 }
