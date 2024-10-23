@@ -765,16 +765,6 @@ video {
   opacity: 1;
 }
 
-.hover\:bg-\[rgb\(53\2c 190\2c 119\)\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(53 190 119 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[rgb\(53\2c 200\2c 119\)\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(53 200 119 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-\[rgb\(32\2c 156\2c 88\)\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(32 156 88 / var(--tw-bg-opacity));
