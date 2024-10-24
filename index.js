@@ -10,7 +10,7 @@ function createElement(el, text, classNm) {
     element.innerHTML = text;
   }
   if (classNm !== undefined && classNm !== "") {
-    element.classList.add(classNm);
+    element.className = classNm;
   }
   return element;
 }
@@ -43,6 +43,11 @@ function editTodoList(e) {
   const event = e.target;
   if (event.innerHTML === "Delete") {
     event.parentNode.remove();
+  }
+  if(event.innerHTML === "Edit"){
+    console.log('hello tanim')
+    todoInput.value = event.previousElementSibling.innerHTML
+    isEdit = event
   }
 }
 
