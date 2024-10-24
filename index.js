@@ -26,7 +26,9 @@ function addTodoList() {
     return false;
   }
   if(addBtn.innerHTML === "Save"){
-    
+    isEdit.previousElementSibling.innerHTML = inputText
+    todoInput.value = ''
+    todoInput.focus()
   }
   else {
     const li = createElement("li", "", "todoItem");
@@ -49,9 +51,11 @@ function editTodoList(e) {
     event.parentNode.remove();
   }
   if(event.innerHTML === "Edit"){
-    console.log('hello tanim')
+    addBtn.innerHTML = "Save"
     todoInput.value = event.previousElementSibling.innerHTML
     isEdit = event
+    todoInput.focus()
+    
   }
 }
 
