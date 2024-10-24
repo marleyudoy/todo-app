@@ -24,7 +24,11 @@ function addTodoList() {
   if (inputText.length <= 0) {
     alert("input is empty");
     return false;
-  } else {
+  }
+  if(addBtn.innerHTML === "Save"){
+    
+  }
+  else {
     const li = createElement("li", "", "todoItem");
     let p = createElement("p", inputText, "flex-1");
     bindingChildWithParent(li, p);
