@@ -26,6 +26,7 @@ function addTodoList() {
     return false;
   }
   if(addBtn.innerHTML === "Save"){
+    addBtn.innerHTML = "Add"
     isEdit.previousElementSibling.innerHTML = inputText
     todoInput.value = ''
     todoInput.focus()

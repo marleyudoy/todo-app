@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 .main-todo-div {
-  @apply w-[500px] h-[500px] bg-[rgba(16,61,55,0.3)] border border-white rounded-[20px] p-3 shadow-md shadow-green-900;
+  @apply w-[100%] sm:w-[70%] md:w-[60%] lg:w-[50%] xl:w-[40%] h-[60%] bg-[rgba(16,61,55,0.3)] border border-white rounded-[20px] p-3 shadow-md shadow-green-900;
 }
 
 .todoItem {
-  @apply flex justify-between items-center gap-4 px-2 py-2 border border-[rgb(53,160,119)] rounded-[4px] mt-3 hover:bg-[rgb(22,65,49)];
+  @apply flex justify-between items-center gap-4 px-2 py-2 border border-[rgb(53,160,119)] rounded-[4px] mt-3 hover:bg-[rgb(22,65,49)] cursor-pointer;
 }
 .editBtn {
   @apply text-xl cursor-pointer text-green-700;
